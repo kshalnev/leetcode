@@ -32,7 +32,7 @@ public:
     }
 };
 
-void test_word_pattern()
+void test_wordPattern()
 {
   assert(true == Solution().wordPattern("abba", "dog cat cat dog"));
   assert(false == Solution().wordPattern("abba", "dog cat cat fish"));
