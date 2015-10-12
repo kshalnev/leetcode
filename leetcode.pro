@@ -11,6 +11,7 @@ SOURCES += \
     word_pattern.cpp \
     zigzag_level_order.cpp \
     main.cpp \
+    combination_sum_2.cpp
 
 HEADERS += \
     std.hpp \
