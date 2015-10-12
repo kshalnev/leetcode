@@ -9,6 +9,7 @@ TEMPLATE = app
 SOURCES += \
     subsets_with_dup.cpp \
     word_pattern.cpp \
+    zigzag_level_order.cpp \
     main.cpp \
 
 HEADERS += \

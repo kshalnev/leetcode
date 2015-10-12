@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <deque>
 #include <map>
+#include <queue>
 #include <set>
 #include <sstream>
 #include <string>
