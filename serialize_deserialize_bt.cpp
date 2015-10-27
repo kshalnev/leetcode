@@ -52,8 +52,9 @@ class Codec
             if (index_on_level == level_limit)
             {
                 index_on_level = 0;
-                level_limit *= 2;
-                level_index += 1;
+                level_limit = 2 * level_valid;
+                ++level_index;
+                level_valid = 0;
             }
 
             pos = newpos;
