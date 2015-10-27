@@ -11,7 +11,8 @@ SOURCES += \
     word_pattern.cpp \
     zigzag_level_order.cpp \
     main.cpp \
-    combination_sum_2.cpp
+    combination_sum_2.cpp \
+    serialize_deserialize_bst.cpp
 
 HEADERS += \
     std.hpp \
