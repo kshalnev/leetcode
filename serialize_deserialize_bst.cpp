@@ -10,7 +10,7 @@ struct TreeNode
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-class Codec {
+class CodecBST {
     template <typename F> static void pre_order(TreeNode* root, F&& f)
     {
         f(root->val);
@@ -121,13 +121,13 @@ public:
     }
 };
 
-void test_SerializeDeserializeBinTree()
+void test_SerializeDeserializeBST()
 {
     TreeNode* root = new TreeNode(3);
     root->left = new TreeNode(2);
     root->right = new TreeNode(4);
     root->left->right = new TreeNode(1);
 
-    Codec codec;
+    CodecBST codec;
     codec.deserialize(codec.serialize(root));
 }

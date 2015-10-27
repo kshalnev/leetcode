@@ -12,7 +12,8 @@ SOURCES += \
     zigzag_level_order.cpp \
     main.cpp \
     combination_sum_2.cpp \
-    serialize_deserialize_bst.cpp
+    serialize_deserialize_bst.cpp \
+    serialize_deserialize_bt.cpp
 
 HEADERS += \
     std.hpp \
