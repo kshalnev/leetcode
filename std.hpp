@@ -4,6 +4,7 @@
 #include <deque>
 #include <map>
 #include <queue>
+#include <initializer_list>
 #include <set>
 #include <sstream>
 #include <string>

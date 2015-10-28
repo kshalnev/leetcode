@@ -13,7 +13,8 @@ SOURCES += \
     main.cpp \
     combination_sum_2.cpp \
     serialize_deserialize_bst.cpp \
-    serialize_deserialize_bt.cpp
+    serialize_deserialize_bt.cpp \
+    find_median_from_data_strm.cpp
 
 HEADERS += \
     std.hpp \

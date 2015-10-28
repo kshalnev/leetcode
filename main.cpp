@@ -1,3 +1,4 @@
+void test_FindMedianFromDataStream();
 void test_SerializeDeserializeBT();
 void test_SerializeDeserializeBST();
 void test_combinationSum2();
@@ -6,6 +7,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_FindMedianFromDataStream();
     test_SerializeDeserializeBST();
     test_SerializeDeserializeBT();
     test_combinationSum2();
