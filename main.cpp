@@ -1,3 +1,4 @@
+void testPalidromePartitioning();
 void test_reverseWordsInString();
 void test_FindMedianFromDataStream();
 void test_SerializeDeserializeBT();
@@ -8,6 +9,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    testPalidromePartitioning();
     test_reverseWordsInString();
     test_FindMedianFromDataStream();
     test_SerializeDeserializeBST();
