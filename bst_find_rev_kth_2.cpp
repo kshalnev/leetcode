@@ -26,14 +26,14 @@ public:
         return node->parent != nullptr && node->parent->left == node;
     }
 
-    static void recur(TreeNode * p, size_t & i, size_t k, TreeNode ** res)
+    static bool recur(TreeNode * p, size_t & i, size_t k, TreeNode ** res)
     {
         // visit(p, i)
 
         if (i == k)
         {
             *res = p;
-            return;
+            return true;
         }
 
         ++i;
@@ -41,23 +41,25 @@ public:
         if (p->left != nullptr)
         {
             TreeNode * mr = get_most_right(p->left);
-            recur(mr, i, k, res);
-
-            if (*res != nullptr)
-                return;
+            if (recur(mr, i, k, res))
+                return true;
         }
 
         if (is_left_child(p))
-            return;
+            return false;
 
         if (p->parent != nullptr)
         {
-            recur(p->parent, i, k, res);
+            if (recur(p->parent, i, k, res))
+                return true;
         }
+
+        return false;
     }
 
     TreeNode * findReverseKth(TreeNode * root, size_t k)
     {
+        if (root == nullptr) return nullptr;
         TreeNode * res = nullptr;
         TreeNode * mr = get_most_right(root);
         size_t i = 0;
