@@ -17,7 +17,8 @@ SOURCES += \
     find_median_from_data_strm.cpp \
     reverse_words_in_str.cpp \
     palindrome_partitioning.cpp \
-    bst_reverse_iterator_1.cpp
+    bst_reverse_iterator_1.cpp \
+    bst_reverse_iterator_2.cpp
 
 HEADERS += \
     std.hpp \

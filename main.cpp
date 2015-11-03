@@ -1,4 +1,5 @@
-void test_FindReverseBstKth();
+void test_FindReverseBstKth2();
+void test_FindReverseBstKth1();
 void testPalidromePartitioning();
 void test_reverseWordsInString();
 void test_FindMedianFromDataStream();
@@ -10,7 +11,8 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
-    test_FindReverseBstKth();
+    test_FindReverseBstKth2();
+    test_FindReverseBstKth1();
     testPalidromePartitioning();
     test_reverseWordsInString();
     test_FindMedianFromDataStream();
