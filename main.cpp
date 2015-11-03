@@ -1,3 +1,4 @@
+void test_FindReverseBstKth4();
 void test_FindReverseBstKth3();
 void test_FindReverseBstKth2();
 void test_FindReverseBstKth1();
@@ -12,6 +13,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_FindReverseBstKth4();
     test_FindReverseBstKth3();
     test_FindReverseBstKth2();
     test_FindReverseBstKth1();

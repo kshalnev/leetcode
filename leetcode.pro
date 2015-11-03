@@ -19,7 +19,8 @@ SOURCES += \
     palindrome_partitioning.cpp \
     bst_find_rev_kth_3.cpp \
     bst_find_rev_kth_1.cpp \
-    bst_find_rev_kth_2.cpp
+    bst_find_rev_kth_2.cpp \
+    bst_find_rev_kth_4.cpp
 
 HEADERS += \
     std.hpp \
