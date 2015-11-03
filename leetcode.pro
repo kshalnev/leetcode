@@ -16,7 +16,8 @@ SOURCES += \
     serialize_deserialize_bt.cpp \
     find_median_from_data_strm.cpp \
     reverse_words_in_str.cpp \
-    palindrome_partitioning.cpp
+    palindrome_partitioning.cpp \
+    bst_reverse_iterator_1.cpp
 
 HEADERS += \
     std.hpp \
