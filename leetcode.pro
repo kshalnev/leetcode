@@ -20,7 +20,8 @@ SOURCES += \
     bst_find_rev_kth_3.cpp \
     bst_find_rev_kth_1.cpp \
     bst_find_rev_kth_2.cpp \
-    bst_find_rev_kth_4.cpp
+    bst_find_rev_kth_4.cpp \
+    remove_duplicate_letters.cpp
 
 HEADERS += \
     std.hpp \

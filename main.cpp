@@ -1,3 +1,4 @@
+void test_removeDuplicateLetters();
 void test_FindReverseBstKth4();
 void test_FindReverseBstKth3();
 void test_FindReverseBstKth2();
@@ -13,6 +14,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_removeDuplicateLetters();
     test_FindReverseBstKth4();
     test_FindReverseBstKth3();
     test_FindReverseBstKth2();
