@@ -1,3 +1,5 @@
+void test_groupAnagrams();
+void test_removeInvalidParentheses();
 void test_removeDuplicateLetters();
 void test_FindReverseBstKth4();
 void test_FindReverseBstKth3();
@@ -14,6 +16,8 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_groupAnagrams();
+    test_removeInvalidParentheses();
     test_removeDuplicateLetters();
     test_FindReverseBstKth4();
     test_FindReverseBstKth3();
