@@ -23,7 +23,8 @@ SOURCES += \
     bst_find_rev_kth_4.cpp \
     remove_duplicate_letters.cpp \
     remove_invalid_parentheses.cpp \
-    group_anagrams.cpp
+    group_anagrams.cpp \
+    max_product_of_word_len.cpp
 
 HEADERS += \
     std.hpp \
