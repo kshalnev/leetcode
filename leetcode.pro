@@ -24,7 +24,8 @@ SOURCES += \
     remove_duplicate_letters.cpp \
     remove_invalid_parentheses.cpp \
     group_anagrams.cpp \
-    max_product_of_word_len.cpp
+    max_product_of_word_len.cpp \
+    coin_change.cpp
 
 HEADERS += \
     std.hpp \

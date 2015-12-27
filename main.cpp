@@ -1,3 +1,4 @@
+void test_coinChange();
 void test_maxProductOfWordLen();
 void test_groupAnagrams();
 void test_removeInvalidParentheses();
@@ -17,6 +18,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_coinChange();
     test_maxProductOfWordLen();
     test_groupAnagrams();
     test_removeInvalidParentheses();
