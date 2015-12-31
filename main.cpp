@@ -1,3 +1,4 @@
+void test_numTrees();
 void test_getNPrimes();
 void test_coinChange();
 void test_maxProductOfWordLen();
@@ -19,6 +20,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_numTrees();
     test_getNPrimes();
     test_coinChange();
     test_maxProductOfWordLen();

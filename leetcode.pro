@@ -26,7 +26,8 @@ SOURCES += \
     group_anagrams.cpp \
     max_product_of_word_len.cpp \
     coin_change.cpp \
-    n_primes.cpp
+    n_primes.cpp \
+    unique_bst_trees.cpp
 
 HEADERS += \
     std.hpp \
