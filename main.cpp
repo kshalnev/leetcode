@@ -1,3 +1,4 @@
+void test_lengthOfLIS();
 void test_numTrees();
 void test_getNPrimes();
 void test_coinChange();
@@ -20,6 +21,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_lengthOfLIS();
     test_numTrees();
     test_getNPrimes();
     test_coinChange();

@@ -27,7 +27,8 @@ SOURCES += \
     max_product_of_word_len.cpp \
     coin_change.cpp \
     n_primes.cpp \
-    unique_bst_trees.cpp
+    unique_bst_trees.cpp \
+    length_of_lis.cpp
 
 HEADERS += \
     std.hpp \
