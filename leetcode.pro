@@ -28,7 +28,8 @@ SOURCES += \
     coin_change.cpp \
     n_primes.cpp \
     unique_bst_trees.cpp \
-    length_of_lis.cpp
+    length_of_lis.cpp \
+    odd_even_list.cpp \
 
 HEADERS += \
     std.hpp \
