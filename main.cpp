@@ -1,3 +1,4 @@
+void test_grayCode();
 void test_recoverTree();
 void test_LRUCache();
 void test_oddEvenList();
@@ -24,6 +25,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_grayCode();
     test_recoverTree();
     test_LRUCache();
     test_oddEvenList();

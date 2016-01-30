@@ -32,6 +32,7 @@ SOURCES += \
     odd_even_list.cpp \
     lru_cache.cpp \
     recover_tree.cpp \
+    gray_code.cpp
 
 HEADERS += \
     std.hpp \
