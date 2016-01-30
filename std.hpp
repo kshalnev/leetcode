@@ -2,9 +2,10 @@
 
 #include <algorithm>
 #include <deque>
+#include <functional>
+#include <initializer_list>
 #include <map>
 #include <queue>
-#include <initializer_list>
 #include <set>
 #include <sstream>
 #include <stack>

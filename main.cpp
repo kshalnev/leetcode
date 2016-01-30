@@ -1,3 +1,4 @@
+void test_recoverTree();
 void test_LRUCache();
 void test_oddEvenList();
 void test_lengthOfLIS();
@@ -23,6 +24,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_recoverTree();
     test_LRUCache();
     test_oddEvenList();
     test_lengthOfLIS();

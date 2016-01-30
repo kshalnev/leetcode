@@ -31,6 +31,7 @@ SOURCES += \
     length_of_lis.cpp \
     odd_even_list.cpp \
     lru_cache.cpp \
+    recover_tree.cpp \
 
 HEADERS += \
     std.hpp \
