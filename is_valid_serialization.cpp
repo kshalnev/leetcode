@@ -31,9 +31,6 @@ public:
 
     bool isValidSerialization(string const & preorder)
     {
-        // special case which is treated as valid
-        if (preorder == "#") return true;
-
         using Terminality = bool;
         bool constexpr kNonTerminal = false;
         bool constexpr kTerminal = true;
@@ -44,33 +41,26 @@ public:
         {
             if (n != "#")
             {
-                // O
+                // + O
+
                 s.push(kNonTerminal);
-                return true;
             }
             else
             {
-                if (s.empty()) return false;
-                if (s.top() == kNonTerminal)
+                // + #
+
+                // reduce the stack by using following:
+                // O,# + # -> O,#,# -> #
+                while (s.size() >= 2 && s.top() == kTerminal)
                 {
-                    // O + # -> O,#
-                    s.push(kTerminal);
-                    return true;
+                    s.pop(); // pop a terminal node
+                    if (s.empty() || s.top() == kTerminal) return false;
+                    s.pop(); // pop a non terminal node
                 }
-                else if (s.size() >= 2)
-                {
-                    // O,# + # -> O,#,# -> #
-                    while (s.size() >= 2 && s.top() == kTerminal)
-                    {
-                        s.pop(); // pop a terminal node
-                        if (s.empty() || s.top() == kTerminal) return false;
-                        s.pop(); // pop a non terminal node
-                    }
-                    s.push(kTerminal);
-                    return true;
-                }
-                return false;
+
+                s.push(kTerminal);
             }
+            return true;
         });
 
         if (!res)
