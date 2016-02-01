@@ -2,157 +2,60 @@
 
 // https://leetcode.com/problems/lru-cache/
 
-/*
-class MinHeap
-{
-public:
-  MinHeap(size_t capacity)
-  : m_items(capacity)
-  , m_count()
-  {}
-
-  using TKeyValue = pair<int, int>;
-
-  size_t size() const
-  {
-    assert(m_count <= m_items.size());
-    return m_count;
-  }
-
-  bool empty() const
-  {
-    assert(m_count <= m_items.size());
-    return m_count == 0;
-  }
-
-  TKeyValue const & top() const
-  {
-    assert(m_count <= m_items.size());
-    assert(m_count > 0);
-    retun m_items[0];
-  }
-
-  void pop()
-  {
-    assert(m_count <= m_items.size());
-    assert(m_count > 0);
-    m_items[0] = m_items[m_count - 1];
-    --m_count;
-    heapify(0);
-  }
-
-  void insert(TKeyValue const & item)
-  {
-    assert(m_count < m_items.size());
-    int i = m_count;
-    m_items[m_count] = item;
-    ++m_count;
-    while (i > 0)
-    {
-      int p = (i - 1) / 2;
-      if (m_items[p].second < m_items[i].second) break;
-      swap(m_items[p], m_items[i]);
-      i = p;
-    }
-  }
-
-private:
-  void heapify(int n)
-  {
-    int const l = 2 * n + 1;
-    int const r = 2 * n + 2;
-    int min = n;
-    if (l < m_count && m_items[l].second < m_items[n].second) min = l;
-    if (r < m_count && m_items[r].second < m_items[n].second) min = r;
-    if (min == l)
-    {
-      swap(m_item[n], m_item[l]);
-      heapify(l);
-    }
-    else if (min == r)
-    {
-      swap(m_item[n], m_item[r]);
-      heapify(r);
-    }
-  }
-
-  vector<TKeyValue> m_items;
-  size_t m_count;
-};
-*/
-
 class LRUCache
 {
 public:
     LRUCache(int capacity)
-      : m_valueAndTick(max(1, capacity))
-      , m_count(0)
-      , m_key2index(max(1, capacity))
-      , m_tick(0)
+      : m_capacity(static_cast<size_t>(max(1, capacity)))
+      , m_noRes(-1)
     {
     }
 
     int get(int key)
     {
-        const int i = get_key_index(key);
-        if (i == -1) return -1;
-        update_key_usage(key, i);
-        return m_valueAndTick[i].first;
+        return get_value_ref(key, false);
     }
 
     void set(int key, int value)
     {
-        int i = get_key_index(key);
-        if (i == -1)
-        {
-          if (m_count == m_valueAndTick.size())
-          {
-            int oldKey = find_least_used_key();
-            i = get_key_index(oldKey);
-            m_key2index.erase(oldKey);
-            m_key2index[key] = i;
-          }
-          else
-          {
-            i = m_count;
-            m_key2index[key] = i;
-            ++m_count;
-          }
-        }
-        m_valueAndTick[i].first = value;
-        update_key_usage(key, i);
+        get_value_ref(key, true) = value;
     }
 
 private:
-  int get_tick() { return ++m_tick; }
+    int & get_value_ref(int key, bool allocIfNeed)
+    {
+        auto i = m_keymap.find(key);
+        if (i != m_keymap.end())
+        {
+            auto const li = i->second;
+            m_items.emplace_front(*li);
+            m_items.erase(li);
+            i->second = m_items.begin();
+            return i->second->second;
+        }
 
-  int get_key_index(int key) const
-  {
-    auto const itr = m_key2index.find(key);
-    if (itr == m_key2index.end()) return -1;
-    return itr->second;
-  }
+        if (!allocIfNeed) return m_noRes;
 
-  void update_key_usage(int key, int i)
-  {
-    m_tick2key.erase(m_valueAndTick[i].second);
-    m_valueAndTick[i].second = m_tick2key.insert(make_pair(get_tick(), key)).first->first;
-  }
+        if (m_items.size() < m_capacity)
+        {
+            m_items.emplace_front(make_pair(key, 0));
+            i = m_keymap.insert(make_pair(key, m_items.begin())).first;
+        }
+        else
+        {
+            m_items.emplace_front(make_pair(key, 0));
+            i = m_keymap.insert(make_pair(key, m_items.begin())).first;
+            m_keymap.erase(m_items.back().first);
+            m_items.pop_back();
+        }
+        return i->second->second;
+    }
 
-  int find_least_used_key() const
-  {
-    return m_tick2key.begin()->second;
-  }
+    list<pair<int, int>> m_items;
+    unordered_map<int, list<pair<int, int>>::iterator> m_keymap;
 
-  using TTick2KeyMap = map<int, int>;
-
-  vector<pair<int, int>> m_valueAndTick;
-  size_t m_count;
-
-  unordered_map<int, int> m_key2index;
-
-  TTick2KeyMap m_tick2key;
-  unsigned int m_tick;
+    size_t const m_capacity;
+    int m_noRes;
 };
 
 void test_LRUCache()
@@ -163,4 +66,6 @@ void test_LRUCache()
     c.set(3,2);
     int a = c.get(2);
     int b = c.get(3);
+    assert(a == -1);
+    assert(b == 2);
 }

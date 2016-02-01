@@ -4,6 +4,7 @@
 #include <deque>
 #include <functional>
 #include <initializer_list>
+#include <list>
 #include <map>
 #include <queue>
 #include <set>
