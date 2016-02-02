@@ -34,6 +34,7 @@ SOURCES += \
     recover_tree.cpp \
     gray_code.cpp \
     is_valid_serialization.cpp \
+    longest_increasing_path.cpp \
 
 HEADERS += \
     std.hpp \

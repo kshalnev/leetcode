@@ -1,3 +1,4 @@
+void test_longestIncreasingPath();
 void test_isValidSerialization();
 void test_grayCode();
 void test_recoverTree();
@@ -26,6 +27,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_longestIncreasingPath();
     test_isValidSerialization();
     test_grayCode();
     test_recoverTree();
