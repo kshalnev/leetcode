@@ -35,6 +35,7 @@ SOURCES += \
     gray_code.cpp \
     is_valid_serialization.cpp \
     longest_increasing_path.cpp \
+    wiggle_sort_2.cpp \
 
 HEADERS += \
     std.hpp \
