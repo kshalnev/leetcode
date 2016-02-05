@@ -36,6 +36,7 @@ SOURCES += \
     is_valid_serialization.cpp \
     longest_increasing_path.cpp \
     wiggle_sort_2.cpp \
+    find_itinerary.cpp \
 
 HEADERS += \
     std.hpp \

@@ -1,3 +1,4 @@
+void test_findItinerary();
 void test_wiggleSort2();
 void test_longestIncreasingPath();
 void test_isValidSerialization();
@@ -28,6 +29,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_findItinerary();
     test_wiggleSort2();
     test_longestIncreasingPath();
     test_isValidSerialization();
