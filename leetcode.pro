@@ -37,6 +37,7 @@ SOURCES += \
     longest_increasing_path.cpp \
     wiggle_sort_2.cpp \
     find_itinerary.cpp \
+    counting_bits.cpp \
 
 HEADERS += \
     std.hpp \
