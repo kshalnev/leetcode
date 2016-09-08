@@ -38,6 +38,7 @@ SOURCES += \
     wiggle_sort_2.cpp \
     find_itinerary.cpp \
     counting_bits.cpp \
+    triangle_minimum_total.cpp
 
 HEADERS += \
     std.hpp \
