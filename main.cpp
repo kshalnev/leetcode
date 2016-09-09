@@ -1,3 +1,4 @@
+void test_nextPermutation();
 void test_minimumTotal();
 void test_countingBits();
 void test_findItinerary();
@@ -31,6 +32,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_nextPermutation();
     test_minimumTotal();
     test_countingBits();
     test_findItinerary();
