@@ -7,7 +7,7 @@
 
 class Solution {
 public:
-    string decodeString(string s) {
+    string decodeStringMy(string s) {
         ostringstream o;
         const auto iend = s.end();
         auto p = iend;
@@ -47,11 +47,11 @@ public:
     }
 };
 
-void test_decodeString()
+void test_decodeStringMy()
 {
-    string res = Solution().decodeString("2ab3cd4e");
+    string res = Solution().decodeStringMy("2ab3cd4e");
     assert(res == "ababcdcdcdeeee");
 
-    res = Solution().decodeString("12a4cd");
+    res = Solution().decodeStringMy("12a4cd");
     assert(res == "aaaaaaaaaaaacdcdcdcd");
 }

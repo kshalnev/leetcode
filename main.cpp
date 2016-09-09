@@ -1,4 +1,5 @@
 void test_decodeString();
+void test_decodeStringMy();
 void test_nextPermutation();
 void test_minimumTotal();
 void test_countingBits();
@@ -34,6 +35,7 @@ void test_wordPattern();
 int main(int /* argc */, const char * /* argv */ [])
 {
     test_decodeString();
+    test_decodeStringMy();
     test_nextPermutation();
     test_minimumTotal();
     test_countingBits();

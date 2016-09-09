@@ -40,7 +40,8 @@ SOURCES += \
     counting_bits.cpp \
     triangle_minimum_total.cpp \
     next_permutation.cpp \
-    decode_string_my.cpp
+    decode_string_my.cpp \
+    decode_string.cpp \
 
 HEADERS += \
     std.hpp \
