@@ -44,6 +44,7 @@ SOURCES += \
     decode_string.cpp \
     is_subsequence.cpp \
     calc_equation.cpp \
+    rotate_function.cpp \
 
 HEADERS += \
     std.hpp \

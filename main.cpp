@@ -1,3 +1,4 @@
+void test_maxRotateFunction();
 void test_calcEquation();
 void test_decodeString();
 void test_decodeStringMy();
@@ -35,6 +36,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_maxRotateFunction();
     test_calcEquation();
     test_decodeString();
     test_decodeStringMy();
