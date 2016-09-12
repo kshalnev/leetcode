@@ -42,7 +42,8 @@ SOURCES += \
     next_permutation.cpp \
     decode_string_my.cpp \
     decode_string.cpp \
-    is_subsequence.cpp
+    is_subsequence.cpp \
+    calc_equation.cpp \
 
 HEADERS += \
     std.hpp \

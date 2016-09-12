@@ -1,3 +1,4 @@
+void test_calcEquation();
 void test_decodeString();
 void test_decodeStringMy();
 void test_nextPermutation();
@@ -34,6 +35,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_calcEquation();
     test_decodeString();
     test_decodeStringMy();
     test_nextPermutation();
