@@ -45,6 +45,7 @@ SOURCES += \
     is_subsequence.cpp \
     calc_equation.cpp \
     rotate_function.cpp \
+    valid_utf8.cpp \
 
 HEADERS += \
     std.hpp \
