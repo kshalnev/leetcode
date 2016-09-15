@@ -46,6 +46,7 @@ SOURCES += \
     calc_equation.cpp \
     rotate_function.cpp \
     valid_utf8.cpp \
+    lexical_order.cpp \
 
 HEADERS += \
     std.hpp \
