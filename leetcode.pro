@@ -47,6 +47,7 @@ SOURCES += \
     rotate_function.cpp \
     valid_utf8.cpp \
     lexical_order.cpp \
+    length_longest_path.cpp \
 
 HEADERS += \
     std.hpp \
