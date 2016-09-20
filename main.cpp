@@ -1,3 +1,4 @@
+void test_findNthDigit();
 void test_lengthLongestPath();
 void test_lexicalOrder();
 void test_maxRotateFunction();
@@ -38,6 +39,7 @@ void test_wordPattern();
 
 int main(int /* argc */, const char * /* argv */ [])
 {
+    test_findNthDigit();
     test_lengthLongestPath();
     test_lexicalOrder();
     test_maxRotateFunction();

@@ -48,6 +48,8 @@ SOURCES += \
     valid_utf8.cpp \
     lexical_order.cpp \
     length_longest_path.cpp \
+    binary_watch.cpp \
+    find_nth_digit.cpp \
 
 HEADERS += \
     std.hpp \
