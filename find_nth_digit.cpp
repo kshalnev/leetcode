@@ -1,6 +1,7 @@
 #include "std.hpp"
 
 // https://leetcode.com/problems/nth-digit/
+// Inspired by https://discuss.leetcode.com/topic/59383/0ms-c-solution-with-detail-explanation/2
 
 class Solution {
 public:
