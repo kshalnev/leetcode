@@ -50,6 +50,7 @@ SOURCES += \
     length_longest_path.cpp \
     binary_watch.cpp \
     find_nth_digit.cpp \
+    random_pick_index.cpp \
 
 HEADERS += \
     std.hpp \
