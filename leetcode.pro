@@ -52,6 +52,7 @@ SOURCES += \
     find_nth_digit.cpp \
     random_pick_index.cpp \
     count_and_say.cpp \
+    remove_k_digits.cpp \
 
 HEADERS += \
     std.hpp \
