@@ -51,6 +51,7 @@ SOURCES += \
     binary_watch.cpp \
     find_nth_digit.cpp \
     random_pick_index.cpp \
+    count_and_say.cpp \
 
 HEADERS += \
     std.hpp \
