@@ -55,6 +55,7 @@ SOURCES += \
     remove_k_digits.cpp \
     add_strings.cpp \
     longest_palindrome.cpp \
+    sum_left_leaves.cpp \
 
 HEADERS += \
     std.hpp \
