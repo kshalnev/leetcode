@@ -53,6 +53,7 @@ SOURCES += \
     random_pick_index.cpp \
     count_and_say.cpp \
     remove_k_digits.cpp \
+    add_strings.cpp \
 
 HEADERS += \
     std.hpp \
