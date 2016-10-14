@@ -56,6 +56,7 @@ SOURCES += \
     add_strings.cpp \
     longest_palindrome.cpp \
     sum_left_leaves.cpp \
+    third_max.cpp \
 
 HEADERS += \
     std.hpp \
