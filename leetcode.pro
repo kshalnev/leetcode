@@ -54,6 +54,7 @@ SOURCES += \
     count_and_say.cpp \
     remove_k_digits.cpp \
     add_strings.cpp \
+    longest_palindrome.cpp \
 
 HEADERS += \
     std.hpp \
